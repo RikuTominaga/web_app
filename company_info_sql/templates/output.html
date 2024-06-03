@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>output</title>
+    </head>
+    <body>
+        <ul>
+            <h2>法人１について</h2>
+                <li>法人番号/法人名：{{session["num1"]}}/{{session["name1"]}} </li>
+                <li>事業内容：{{session["info1"]}}
+            <br>
+            <h2>法人２について</h2>
+                <li>法人番号/法人名：{{session["num2"]}}/{{session["name2"]}}</li>
+                <li>事業内容：{{session["info2"]}}</li>
+            <br>
+            <h2>類似度（Cosine Similarity）</h2>
+                <li>{{session["cos_sim_fin"]}}</li>
+        </ul>
+    </body>
+</html>
