@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>output</title>
+        <style>
+            .cos_title{font-size:x-large; font-weight:bold; padding: 0.25em 0.5em; border-left: solid 15px darkblue} 
+            .cos_num{font-size:larger}
+            .inf{font-size:larger; font-weight:bold; padding-left:0.5em; border-left: solid 15px rgba(0, 0, 139, 0.478)}
+            dt{float:left; font-weight:bold}
+            dd{margin-left:100px}
+            .line{border-bottom:solid 1px black}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <div class="cos_title">類似度（Cosine Similarity）</div>
+            <div class="cos_num">{{session["cos_sim_fin"]}}</div>
+            <br>
+            <div class="inf">法人1について</div>
+            <dl>
+                <div class="line">
+                <dt>法人名</dt>
+                <dd>{{session["name1"]}}</dd>
+                </div>
+                <div class="line">
+                <dt>法人番号</dt>
+                <dd>{{session["num1"]}}</dd>
+                </div>
+                <div class="line">
+                <dt>事業内容</dt>
+                <dd>{{session["info1"]}}</dd>
+                </div>
+                </tr>
+            </dl>
+            <div class="inf">法人2について</div>
+            <dl>
+                <div class="line">
+                <dt>法人名</dt>
+                <dd>{{session["name2"]}}</dd>
+                </div>
+                <div class="line">
+                <dt>法人番号</dt>
+                <dd>{{session["num2"]}}</dd>
+                </div>
+                <div class="line">
+                <dt>事業内容</dt>
+                <dd>{{session["info2"]}}</dd>
+                </div>
+                </tr>
+            </dl>
+            </dl>
+
+
+        </ul>
+    </body>
+</html>

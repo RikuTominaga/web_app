@@ -1,0 +1,22 @@
+<html lang="ja">
+    <head>    
+        <meta charset="UTF-8" />
+        <title>Form</title>
+        <style>
+            h1{border-bottom:solid 2px black; color:darkblue; margin-bottom:0} 
+            .form{ border-radius:999px; border-width:0.1px; width:270px; height:25px}
+            .execute{border-radius:999px; border-width:0.1px; width:55px; height:25px}
+        </style>
+    </head>
+    <body>
+        <center>   
+        <h1>Similarity Search app</h1>
+        <p>２つの法人の法人番号を入力してください</p>
+        <form method="POST">
+            <P><input class="form" type="text" name="num1" placeholder=" 法人1の法人番号を入力"></p>
+            <p><input class="form" type="text" name="num2" placeholder=" 法人2の法人番号を入力"></p>
+            <p><input class="execute" type="submit" name="submit" value="検索"></p>      
+        </form>
+        </center>
+    </body>
+</html>
