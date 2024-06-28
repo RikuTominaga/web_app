@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>output</title>
+        <style>
+            h1{ color:darkblue; border-bottom:solid; border-color:black}
+            dt{float:left; font-weight:bold}
+            dd{margin-left:170px}
+        </style>
+    </head>
+    <body>
+        <h1>結果</h1>
+        <dl>
+            <dt>最大在庫水準</dt>
+            <dd>{{session["S"]}}</dd>
+        </dl>
+        <dl>
+            <dt>発注量</dt>
+            <dd>{{session["Q"]}}</dd>
+        </dl>
+    </body>
+</html>

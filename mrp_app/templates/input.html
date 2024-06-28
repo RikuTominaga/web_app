@@ -1,0 +1,44 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <style>
+      h1{ color:darkblue; margin-bottom:0}
+      .title{font-size:larger; border-bottom:solid; border-color:black}
+      dt{float:left; font-weight:bold}
+      dd{ margin-left:170px}
+      p{color:red; font-weight:bold}
+      .reset{background-color:rgba(255, 0, 0, 0.333); border-radius:999px}
+      .execute{background-color:rgba(0, 0, 255, 0.253); border-radius:999px}
+    </style>
+  </head>
+  <body>
+	<h1>定期発注方式app</h1>
+  <div class="title">最大在庫水準と発注量の計算</div>
+	<form method="POST">
+		<dl>
+      <dt>発注間隔</dt>
+      <dd><input type="text" name="R" placeholder="数値を入力してください"></dd>
+    </dl>
+    <dl>
+      <dt>納入リードタイム</dt>
+      <dd><input type="text" name="L" placeholder="数値を入力してください"></dd>
+    </dl>
+    <dl>
+      <dt>1日の平均消費量</dt>
+      <dd><input type="text" name="D" placeholder="数値を入力してください"></dd>
+    </dl>
+    <dl>
+      <dt>安全在庫量</dt>
+      <dd><input type="text" name="SS" placeholder="数値を入力してください"></dd>
+    </dl>
+    <dl>
+      <dt>発注時点での在庫量</dt>
+      <dd><input type="text" name="I"  placeholder="数値を入力してください"></dd>
+    </dl>  
+    <p>発注済未入荷量はないものとする</p>
+      <button class="reset" type="reset">リセット</button> 
+      <button class="execute" type="submit" name="submit" >計算実行</button>
+    </form>
+  </body>
+</html>
