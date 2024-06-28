@@ -41,9 +41,9 @@ def index():
         URL1= 'https://info.gbiz.go.jp/hojin/ichiran?hojinBango='
         URL1= URL1 + num1
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless") #headlessモード
-        options.add_argument('--disable-dev-shm-usage') #クラッシュ回避
-        options.add_argument("--no-sandbox") #sandboxモード解除
+        options.add_argument("--headless") 
+        options.add_argument('--disable-dev-shm-usage') 
+        options.add_argument("--no-sandbox") 
 
         driver = webdriver.Chrome(
             options=options
@@ -60,9 +60,9 @@ def index():
         URL2= 'https://info.gbiz.go.jp/hojin/ichiran?hojinBango='
         URL2 = URL2 + num2
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless") #headlessモード
-        options.add_argument('--disable-dev-shm-usage') #クラッシュ回避
-        options.add_argument("--no-sandbox") #sandboxモード解除
+        options.add_argument("--headless")
+        options.add_argument('--disable-dev-shm-usage') 
+        options.add_argument("--no-sandbox")
 
         driver = webdriver.Chrome(
             options=options
